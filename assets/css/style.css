@@ -4,9 +4,13 @@
     --cor-texto:#000000;
     --cor-acento:#AB8A3c;
 }
+*{
+    box-sizing: border-box;
+}
 body{
     background-color: var(--cor-principal);
     font-family: 'Montserrat',sans-serif;
+    box-sizing: border-box;
 }
 header{
     position: sticky;
@@ -117,7 +121,7 @@ header{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 .row span{
@@ -167,7 +171,7 @@ header{
     margin: 0;
 }
 .cabecalho__subtitulo , h2{
-    font-size: 38px;
+    font-size: 2rem;
     color: var(--cor-texto);
     font-weight: bold;
     margin: 0;
@@ -191,9 +195,9 @@ header{
     text-align: center;  
 }
 .fale-conosco__fundo{
-    max-width: 1280px;
+    max-width: 896px;
     height: 300px;
-    box-shadow: 15px -15px var(--cor-acento);
+    box-shadow: 1rem -1rem var(--cor-acento);
     object-fit: cover;
     object-position: center;
     filter: brightness(0.6);
@@ -208,16 +212,16 @@ header{
     padding-top: 12rem;
 }
 .card-icone{
-    width: 260px;
+    width: 23%;
     height: 316px;
-    margin: 10px;
+    margin: 10px 0;
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 0 20px 1px #00000015;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px 0;
+    padding: .8rem;
     justify-content: space-around;
 }
 .card-icone__icone{
@@ -232,6 +236,7 @@ header{
     color: var(--cor-principal);
 }
 .card-icone__titulo{
+    margin: 0;
     font-weight: bold;
     font-size: 22px;
 }
@@ -354,7 +359,7 @@ footer .container{
     }
 }
 
-@media (max-width: 815px){
+@media (max-width: 768px){
     .cabecalho__subtitulo{
         font-size: 2rem;
     }
@@ -364,9 +369,9 @@ footer .container{
     .header-navbar{
         visibility: collapse;
         position:absolute;
-        top:0;
+        top:-2.3rem;
         background-color: var(--cor-principal);
-        width: 87.3%;
+        width: 100%;
         left:0;
         transform: scale(100%,0);
         padding: 1.5rem;
@@ -375,7 +380,7 @@ footer .container{
     }
     .header-navbar.ativo{
         visibility: visible;
-        top:5rem;
+        top:4rem;
         transform: scale(100%);
     }
     .header-hamburguer{
@@ -402,16 +407,29 @@ footer .container{
         padding: 2% 4px 13rem 4px;
     }
     .card-icone{
-        width: 240px;
+        width: 30%;
     }
     #blog {
         padding: 10px;
     }
 }
-@media (max-width:500px){
+@media (max-width:426px){
+    .cabecalho__subtitulo {
+        font-size: 1.7rem;
+        margin-top:3rem;
+    }
+    .card-icone{
+        width: 42%;
+        height: 13rem;
+        padding: 3px;
+    }
+    .card-icone__titulo{font-size: 14px;}
+    p{font-size: 12px}
+
     footer .container{
         justify-content: start;
     }
+
 }
 
 /* animações */
