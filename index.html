@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+    <title>NerdWeb - Layout</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="/#">
+                <img src="assets/img/Layout..svg" alt="layout. logo" class="header-logo">
+            </a>
+            <div class="header-hamburguer">
+                <span class="line-1"></span>
+                <span class="line-2"></span>
+                <span class="line-3"></span>
+            </div>
+            <nav class="header-navbar">
+                <ul class="nav">
+                    <li><a class="nav-link home" href="#">Home</a></li>
+                    <li><a class="nav-link sobre-nos" href="#sobre-nos">Sobre Nós</a></li>
+                    <li><a class="nav-link diferenciais" href="#diferenciais">Diferenciais</a></li>
+                    <li><a href="" class="botao">Fale Conosco</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="hero" class="row">
+            <div class="hero__coluna">
+                <div class="hero__conteudo">
+                    <h1>Esse é site sobre uma <span>empresa especialista</span> em negócios</h1>
+                    <p>Isto é parágrafo que conta uma pouco sobre o que essa empresa especialista em negócios faz para
+                        sobreviver no mercado</p>
+                    <div class="hero__botoes">
+                        <a href="" class="botao botao--preto">Fale Conosco</a>
+                        <a href="" class="botao botao--branco">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__coluna">
+                <img src="assets/img/portrait-smiling-woman-making-notes.jpg" alt="">
+            </div>
+        </section>
+        <section id="sobre-nos">
+            <div class="cabecalho">
+                <h2 class="cabecalho__titulo">Sobre</h2>
+                <h3 class="cabecalho__subtitulo">Este subtítulo é um slogan referente a marca, excelente para a geração
+                    de valor e empoderamento</h3>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum leo non tellus sollicitudin, ut
+                commodo mi venenatis. Nullam vel ornare eros. Curabitur varius erat ante, vel porttitor leo commodo
+                eget. Aliquam eget justo nulla. Morbi eu nulla libero. Class aptent taciti sociosqu ad litora torquent
+                per conubia nostra, per inceptos himenaeos.</p>
+        </section>
+        <section class="fade__in" id="fale-conosco">
+            <img src="assets/img/group-people-working-out-business-plan-office (1).jpg" alt=""
+                class="fale-conosco__fundo">
+            <div class="flutuante">
+                <h2 class="cabecalho__subtitulo titulo--branco">Um slogan muito legal para servir de respiro</h2>
+                <a href="" class="botao">FALE CONOSCO</a>
+            </div>
+        </section>
+        <section id="diferenciais">
+            <article class="cabecalho cabecalho--centro">
+                <h2 class="cabecalho__titulo">Os Diferenciais</h2>
+                <h3 class="cabecalho__subtitulo">Os Diferenciais</h3>
+            </article>
+            <article class="row container">
+                <div class="card-icone slide__up">
+                    <div class="card-icone__icone"><i class="fa-solid fa-building"></i></div>
+                    <h4 class="card-icone__titulo">Diferencial 1</h4>
+                    <p class="card-icone__conteudo">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="card-icone slide__up">
+                    <div class="card-icone__icone"><i class="fa-solid fa-user-tie"></i></div>
+                    <h4 class="card-icone__titulo">Diferencial 1</h4>
+                    <p class="card-icone__conteudo">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="card-icone slide__up">
+                    <div class="card-icone__icone"><i class="fa-solid fa-print"></i></div>
+                    <h4 class="card-icone__titulo">Diferencial 1</h4>
+                    <p class="card-icone__conteudo">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="card-icone slide__up">
+                    <div class="card-icone__icone"><i class="fa-solid fa-share-nodes"></i></div>
+                    <h4 class="card-icone__titulo">Diferencial 1</h4>
+                    <p class="card-icone__conteudo">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="card-icone slide__up">
+                    <div class="card-icone__icone"><i class="fa-solid fa-building"></i></div>
+                    <h4 class="card-icone__titulo">Diferencial 1</h4>
+                    <p class="card-icone__conteudo">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="card-icone slide__up">
+                    <div class="card-icone__icone"><i class="fa-solid fa-user-tie"></i></div>
+                    <h4 class="card-icone__titulo">Diferencial 1</h4>
+                    <p class="card-icone__conteudo">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="card-icone slide__up">
+                    <div class="card-icone__icone"><i class="fa-solid fa-print"></i></div>
+                    <h4 class="card-icone__titulo">Diferencial 1</h4>
+                    <p class="card-icone__conteudo">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="card-icone slide__up">
+                    <div class="card-icone__icone"><i class="fa-solid fa-share-nodes"></i></div>
+                    <h4 class="card-icone__titulo">Diferencial 1</h4>
+                    <p class="card-icone__conteudo">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </article>
+        </section>
+        <section id="blog">
+            <article class="cabecalho">
+                <h2 class="cabecalho__titulo">Blog</h2>
+                <h3 class="cabecalho__subtitulo">Nossas notícias</h3>
+            </article>
+            <article class="swiper">
+                <div class="swiper-wrapper carrossel">
+                    <div class="card-img swiper-slide">
+                        <img src="assets/img/businesswoman-leader-modern-office-with-businesspeople-workin_1139-957.jpg"
+                            alt="mulher de negócios" class="card-img__imagem">
+                        <div class="card-img__corpo">
+                            <h4 class="card-img__categoria">
+                                Categoria
+                            </h4>
+                            <p class="card-img__conteudo">
+                                Este é um título de post superinteressante sobre um assunto bombátisco com engajamento
+                                excelente
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-img swiper-slide">
+                        <img src="assets/img/feels-good-because-she-loves-she-s-job-portrait-young-girl-stands-office-with-employees-background_146671-13609.jpg"
+                            alt="mulher apaixonada pelo trabalho" class="card-img__imagem">
+                        <div class="card-img__corpo">
+                            <h4 class="card-img__categoria">
+                                Categoria
+                            </h4>
+                            <p class="card-img__conteudo">
+                                Este é um título de post superinteressante sobre um assunto bombátisco com engajamento
+                                excelente
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-img swiper-slide">
+                        <img src="assets/img/successful-young-woman-modern-office-working-laptop_109710-1521.jpg"
+                            alt="Jovem bem sucedida na empresa" class="card-img__imagem">
+                        <div class="card-img__corpo">
+                            <h4 class="card-img__categoria">
+                                Categoria
+                            </h4>
+                            <p class="card-img__conteudo">
+                                Este é um título de post superinteressante sobre um assunto bombátisco com engajamento
+                                excelente
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-img swiper-slide">
+                        <img src="assets/img/charming-carefree-european-female-with-fair-hair-glasses-sitting-near-window-laptop-leaning-hands_197531-21326.jpg"
+                            alt="Jovem feliz próximo de seu notebook" class="card-img__imagem">
+                        <div class="card-img__corpo">
+                            <h4 class="card-img__categoria">
+                                Categoria
+                            </h4>
+                            <p class="card-img__conteudo">
+                                Este é um título de post superinteressante sobre um assunto bombátisco com engajamento
+                                excelente
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-img swiper-slide">
+                        <img src="assets/img/work-lifestyle-business-concept-good-looking-focused-european-female-trendy-glasses-sitting-cafe-near-laptop-working-notebook-surrounded-with-books-ma.jpg"
+                            alt="Estilo de vida empresarial" class="card-img__imagem">
+                        <div class="card-img__corpo">
+                            <h4 class="card-img__categoria">
+                                Categoria
+                            </h4>
+                            <p class="card-img__conteudo">
+                                Este é um título de post superinteressante sobre um assunto bombátisco com engajamento
+                                excelente
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="controle__botoes-slider">
+                    <div class="swiper-button-prev"></div>
+                     <div class="swiper-button-next"></div>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <img src="assets/img/Layout.-1.svg" alt="Layout. Logo" class="footer__img">
+            <div class="footer__icones">
+                <a href="" class="footer__icone"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="" class="footer__icone"><i class="fa-brands fa-youtube"></i></a>
+                <a href="" class="footer__icone"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script>
+         new Swiper('.swiper', {
+             spaceBetween:10,
+            breakpoints:{
+                320:{
+                    slidesPerView:1
+                },
+                600:{
+                    slidesPerView:3   
+                },
+                900:{
+                    slidesPerView:4
+                }
+            },
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }
+        })
+    </script>
+</body>
+
+</html>
