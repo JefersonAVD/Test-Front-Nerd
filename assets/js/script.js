@@ -13,15 +13,15 @@ hamburger.addEventListener('click',evt =>{
 window.onload = () =>{
     menuStrinking();
     linkActiveId();
-    sectionAnimation('.fade__in',400);
-    sectionAnimation('.slide__up',400);
+    sectionAnimation('.fade__in',600);
+    sectionAnimation('.slide__up',600);
 }
 
 window.onscroll = ()=>{
     menuStrinking();
     linkActiveId();
-    sectionAnimation('.fade__in',400);
-    sectionAnimation('.slide__up',400);
+    sectionAnimation('.fade__in',600);
+    sectionAnimation('.slide__up',600);
 
 };
 
@@ -35,13 +35,13 @@ const linkActiveId = ()=>{
     let sections = document.querySelectorAll('section');
     let id;
     [...sections].forEach(section=>{
-        if(scrollY >= section.offsetTop){
+        if(scrollY >= section.offsetTop -20){
             id =  section.getAttribute('id');
         }
     });
     let navLinks = document.querySelectorAll('.nav-link')
     navLinks.forEach(navLink => {
-        if(document.documentElement.scrollTop < 400){
+        if(document.documentElement.scrollTop < 600){
             if(navLink.className.includes('home'))
 
             return navLink.classList.add('active')
